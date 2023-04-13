@@ -1,0 +1,14 @@
+{
+	"extends": "./tsconfig.json",
+	"include": [
+		// repeated from base config's "include" setting
+		"src/**/*.ts",
+		"src/types/**/*.d.ts",
+		"tests/**/*.ts",
+		"*.ts",
+
+		// these are the eslint-only inclusions
+		".eslintrc"
+	],
+	"exclude": ["node_modules", "dist"]
+}

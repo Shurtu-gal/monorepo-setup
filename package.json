@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Project",
+  "main": "",
+  "type": "module",
+  "author": "<100484401+Shurtu-gal@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "lint": "yarn workspaces run lint",
+    "prepare": "husky install",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "opencommit": "^1.1.24"
+  }
+}

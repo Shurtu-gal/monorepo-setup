@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		/* Language and Environment */
+		"target": "es2018",
+		"lib": ["dom", "es6", "es2017", "esnext.asynciterable", "ESNext"],
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"pretty": true,
+
+		/* Modules */
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@tests": ["./tests"]
+		},
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"removeComments": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		/* Type Checking */
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* Completeness */
+		"skipLibCheck": true /* Skip type checking all .d.ts files. */
+	},
+	"files": ["src/types/global.d.ts"],
+	"include": ["./src/**/*.ts", "./src/**/*.d.ts", ".tests/**/*.ts"],
+	"exclude": ["node_modules", "dist", "./src/**/*.prisma"]
+}
